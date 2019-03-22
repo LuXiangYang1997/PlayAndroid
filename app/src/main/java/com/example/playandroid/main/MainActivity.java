@@ -5,7 +5,6 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
-import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
 import com.example.playandroid.R;
@@ -45,6 +44,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * 初始化View
      */
     private void initView() {
+
+        mainBinding.slideMenuView.scrollTo(0,0);
 
         mainBinding.toolbarLayout.imgLeft.setImageResource(R.mipmap.icon_side);
 
@@ -100,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 mainBinding.viewpager.setCurrentItem(Constant.PROGRAM);
                 break;
             case R.id.img_left:
-                mainBinding.drawerLayout.openDrawer(Gravity.LEFT);
+                mainBinding.slideMenuView.toggle();
                 break;
         }
 
