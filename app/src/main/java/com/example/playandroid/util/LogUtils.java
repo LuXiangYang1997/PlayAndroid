@@ -7,7 +7,7 @@ import android.util.Log;
  * Created by 陆向阳 on 2019/3/21.
  */
 
-public class LogUtil {
+public class LogUtils {
     public static boolean isDebug = true;//日志开关，false为关闭
 
     private final static String APP_TAG = "PlayAndroid";

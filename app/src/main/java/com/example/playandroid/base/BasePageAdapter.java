@@ -6,7 +6,7 @@ import android.util.SparseArray;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.playandroid.util.LogUtil;
+import com.example.playandroid.util.LogUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -63,7 +63,7 @@ public abstract class BasePageAdapter<T> extends PagerAdapter {
 
     //加载数据
     public void loadData(List data) {
-        LogUtil.e("DATA",data.size()+"");
+        LogUtils.e("DATA",data.size()+"");
         mData.clear();
         mData.addAll(data);
         notifyDataSetChanged();
