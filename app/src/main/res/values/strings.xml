@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PlayAndroid</string>
+    <!--MainActivity-->
+    <string name="home">首页</string>
+    <string name="home_knowledge_hierarchy">知识体系</string>
+    <string name="home_navigation">导航</string>
+    <string name="home_program">项目</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
