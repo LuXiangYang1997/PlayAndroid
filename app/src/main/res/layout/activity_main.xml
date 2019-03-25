@@ -2,29 +2,27 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.example.playandroid.view.SlideMenuView
-        android:id="@+id/slideMenuView"
+    <com.example.playandroid.view.SlideSideMenuTransitionLayout
+        android:id="@+id/slideMenuLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_gravity="left"
+            android:background="@color/white">
 
-            <LinearLayout
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/drawer_recyclerView"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="left"
-                android:background="@color/white">
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
 
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/drawer_recyclerView"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
 
-            </LinearLayout>
+        <com.example.playandroid.view.SlideSideMenuContentCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -134,8 +132,8 @@
 
             </LinearLayout>
 
-        </LinearLayout>
+        </com.example.playandroid.view.SlideSideMenuContentCardView>
 
-    </com.example.playandroid.view.SlideMenuView>
+    </com.example.playandroid.view.SlideSideMenuTransitionLayout>
 
 </layout>

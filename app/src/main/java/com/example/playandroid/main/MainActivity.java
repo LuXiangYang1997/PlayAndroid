@@ -45,8 +45,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     private void initView() {
 
-        mainBinding.slideMenuView.scrollTo(0,0);
-
         mainBinding.toolbarLayout.imgLeft.setImageResource(R.mipmap.icon_side);
 
         mainBinding.toolbarLayout.imgLeft.setOnClickListener(this);
@@ -101,7 +99,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 mainBinding.viewpager.setCurrentItem(Constant.PROGRAM);
                 break;
             case R.id.img_left:
-                mainBinding.slideMenuView.toggle();
+                mainBinding.slideMenuLayout.toggle();
                 break;
         }
 
