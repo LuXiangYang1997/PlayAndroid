@@ -2,7 +2,6 @@ package com.example.playandroid.ui.knowledgehierarchy.view;
 
 import com.example.playandroid.R;
 import com.example.playandroid.base.BaseFragment;
-import com.example.playandroid.base.BaseViewModel;
 import com.example.playandroid.databinding.FragmentKnowLedgeHierarchyBinding;
 import com.example.playandroid.ui.knowledgehierarchy.vm.KnowLedgeHierarchyVM;
 
